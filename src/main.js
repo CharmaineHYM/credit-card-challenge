@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import Maska from "maska";
 
-createApp(App).mount('#app')
+const myApp = createApp(App);
+myApp.use(Maska);
+myApp.mount("#app");
