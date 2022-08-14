@@ -4,28 +4,28 @@
     <form class="personalDetail" v-else>
         <div class="cardName">
             <Field.Label class="label">Cardholder Name</Field.Label>
-            <Field.Input placeholder="e.g. Jane Appleseed" type="text" v-model="store.cardName" pattern="[^a-z A-Z]+" />
-            <Field.Error v-show="store.cardNameErr" >{{store.cardNameErr}}</Field.Error>
+            <Field.Input placeholder="e.g. Jane Appleseed" type="text" v-model="store.cardName" pattern="[^a-z A-Z]+" inputmode="text" />
+            <Field.Error v-show="store.cardNameErr">{{store.cardNameErr}}</Field.Error>
         </div>
 
         <div class="cardNb">
             <Field.Label class="label">Card Number</Field.Label>
-            <Field.Input placeholder="e.g. 1234 5678 9123 0000" v-model="formatedCardNb" maxlength="19" pattern="[^0-9]+" />
+            <Field.Input placeholder="e.g. 1234 5678 9123 0000" v-model="formatedCardNb" maxlength="19" pattern="[^0-9]+" inputmode="number" />
             <Field.Error v-show="store.cardNbErr" >{{store.cardNbErr}}</Field.Error>
         </div>
 
         <div class="expDate">
             <Field.Label class="label">Exp. Date (MM/YY)</Field.Label>
             <div class="expDate__options">
-                <Field.Input placeholder="MM" class="month" v-model="store.expMonth" maxlength="2" pattern="[^0-9]+" /> 
-                <Field.Input placeholder="YY"  class="year" v-model="store.expYear" maxlength="2" pattern="[^0-9]+" />
+                <Field.Input placeholder="MM" class="month" v-model="store.expMonth" maxlength="2" pattern="[^0-9]+" inputmode="number" /> 
+                <Field.Input placeholder="YY"  class="year" v-model="store.expYear" maxlength="2" pattern="[^0-9]+" inputmode="number" />
             </div>
                 <Field.Error v-show="store.expDateErr" >{{store.expDateErr}}</Field.Error>
         </div>
 
         <div class="cvc">
             <Field.Label class="label">cvc</Field.Label>
-            <Field.Input placeholder="e.g. 123" v-model="store.cvc" maxlength="3" pattern="[^0-9]+" />
+            <Field.Input placeholder="e.g. 123" v-model="store.cvc" maxlength="3" pattern="[^0-9]+" inputmode="number" />
            <Field.Error v-show="store.cvcErr" >{{store.cvcErr}}</Field.Error>
         </div>
 
