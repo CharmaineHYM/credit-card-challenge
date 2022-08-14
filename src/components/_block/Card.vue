@@ -3,7 +3,8 @@
       <div class="card__wrapper">
       <div class="card">
     <div class="front__card">
-        <img src="../../assets/bg-card-front.png" class="front__card__img card__img"/>
+        <img src="../../assets/bg-card-front.png"
+        alt="card-front" class="front__card__img card__img"/>
         <div class="card__content">
             <div class="card__logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="84" height="47" fill="none"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
@@ -16,7 +17,7 @@
        
     </div>
     <div class="back__card">
-        <img src="../../assets/bg-card-back.png" class="back__card__img card__img"/>
+        <img src="../../assets/bg-card-back.png" alt="card-back" class="back__card__img card__img"/>
         <p class="card__csv">{{showCvc}}</p>
     </div>
   </div>
